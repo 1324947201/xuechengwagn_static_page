@@ -1,0 +1,567 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.top {
+    position        : fixed;
+    left            : 50%;
+    top             : 800px;
+    margin-left     : 605px;
+    width           : 30px;
+    height          : 60px;
+    border-radius   : 15px;
+    background-color: #9bceea;
+}
+
+.top a {
+    display    : block;
+    width      : 30px;
+    height     : 60px;
+    color      : #fff;
+    font-size  : 45px;
+    line-height: 60px;
+    text-align : center;
+}
+
+.w {
+    width : 1200px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix :after {
+    content   : "";
+    display   : block;
+    height    : 0;
+    clear     : both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* IE6 IE7 兼容性需要 */
+    *zoom: 1;
+}
+
+
+.header {
+    height : 42px;
+    padding: 29px 0;
+}
+
+/* -----logo----- */
+
+.header .logo {
+    float : left;
+    width : 196px;
+    height: 42px;
+}
+
+/* -----导航栏----- */
+.nav {
+    float      : left;
+    height     : 42px;
+    margin-left: 59px;
+}
+
+
+.header .nav ul li {
+    float: left;
+}
+
+.header .nav ul li a {
+    display    : inline-block;
+    height     : 42px;
+    padding    : 0 10px;
+    margin     : 0 10px;
+    font-family: 'Microsoft yahei';
+    font-size  : 18px;
+    line-height: 42px;
+    color      : #050505;
+}
+
+.header .nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* -----搜索模块----- */
+.header .search {
+    float        : left;
+    margin-left  : 75px;
+    margin-top   : 1px;
+    margin-bottom: 1px;
+    width        : 409px;
+    height       : 38px;
+    border       : 1px solid #00a4ff;
+}
+
+.header .search .tex {
+    float        : left;
+    width        : 324px;
+    height       : 38px;
+    font-size    : 14px;
+    line-height  : 38px;
+    color        : #bfbfbf;
+    border-radius: 0px;
+    border       : 0px;
+    padding      : 0 18px;
+}
+
+.header .search .tex:focus {
+    outline: none;
+    color  : #000;
+}
+
+.header .search .button {
+    float           : left;
+    width           : 49px;
+    height          : 38px;
+    border          : 0px;
+    background-color: #00a4ff;
+    background-image: url(images/fa-search.png);
+    cursor          : pointer;
+}
+
+.header .search .button:focus {
+    outline: none;
+}
+
+/* -----用户模块----- */
+
+.header .user {
+    float      : left;
+    width      : 154px;
+    height     : 42px;
+    margin-left: 30px;
+
+}
+
+.header .user a {
+    font-size: 14px;
+    color    : #666666;
+}
+
+
+
+.header .user a img {
+    height        : 30px;
+    width         : 30px;
+    margin        : 6px 1px;
+    vertical-align: middle;
+}
+
+/* -----banner模块----- */
+
+.banner {
+    height          : 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height    : 420px;
+    background: url(images/banner2.png) no-repeat scroll top center;
+}
+
+.banner .w .bannerlink {
+    float  : left;
+    display: block;
+    width  : 782px;
+    height : 420px;
+}
+
+/*------ 侧边栏模块------ */
+
+.banner .subnav {
+    float           : left;
+    height          : 396px;
+    width           : 190px;
+    padding         : 12px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner .subnav ul li {
+    height      : 44px;
+    font-size   : 14px;
+    margin-left : 20px;
+    margin-right: 20px;
+    line-height : 44px;
+}
+
+.banner .subnav ul li a {
+    display: block;
+    height : 44px;
+    width  : 150px;
+    color  : #fff;
+}
+
+.banner .subnav ul li a span {
+    float: right;
+}
+
+.banner .subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+/*------ 课程模块------ */
+
+.banner .course {
+    float           : right;
+    width           : 228px;
+    height          : 300px;
+    margin          : 60px 0;
+    background-color: #fff;
+}
+
+.banner .course .coursehead {
+    height          : 48px;
+    line-height     : 48px;
+    background-color: #9bceea;
+}
+
+.banner .course .coursehead h3 {
+    color     : #fff;
+    text-align: center;
+    font-size : 18px;
+}
+
+.banner .course .coursebox1 {
+    width         : 192px;
+    height        : 40px;
+    margin        : 0 18px;
+    padding-top   : 12px;
+    padding-bottom: 12px;
+    font-size     : 16px;
+    color         : #4e4e4e;
+    border-bottom : 2px solid #efefef;
+}
+
+.banner .course .coursebox1 .continue {
+    display    : inline-block;
+    font-size  : 14px;
+    margin-left: 5px;
+    color      : #4e4e4e;
+}
+
+.banner .course .coursebox1 div {
+    height     : 14px;
+    line-height: 14px;
+}
+
+
+.banner .course .coursebox1 .learning {
+    display    : inline-block;
+    margin     : 0;
+    padding    : 0;
+    font-size  : 12px;
+    line-height: 12px;
+    color      : #bdbdbd;
+}
+
+.banner .course button {
+    width           : 200px;
+    height          : 40px;
+    margin          : 6px 14px 0 14px;
+    border          : 2px solid #00a4ff;
+    color           : #00a4ff;
+    font-size       : 16px;
+    background-color: #fff;
+    outline         : none;
+    cursor          : pointer;
+}
+
+/* -----精品推荐 小 模块----- */
+.goods {
+    height    : 60px;
+    margin-top: 8px;
+    box-shadow: 0 5px 10px 0px rgb(0, 0, 0, 0.3);
+    overflow  : hidden;
+}
+
+.goods .goodshd {
+    float       : left;
+    height      : 16px;
+    margin      : 22px 0;
+    padding     : 0 34px;
+    border-right: 1px solid #bfbfbf;
+}
+
+.goods .goodshd h3 {
+    color      : #00a4ff;
+    font-size  : 16px;
+    line-height: 16px;
+}
+
+.goods ul li {
+    float : left;
+    height: 16px;
+}
+
+.goods ul li {
+    margin      : 22px 0;
+    padding     : 0 34px;
+    border-right: 1px solid #bfbfbf;
+    line-height : 16px;
+}
+
+.goods ul li a {
+    color      : #454545;
+    font-size  : 16px;
+    line-height: 16px;
+}
+
+.goods .mod {
+    float      : right;
+    height     : 14px;
+    margin     : 23px 0;
+    padding    : 0 34px;
+    line-height: 14px;
+}
+
+.goods .mod a {
+    color    : #00a4ff;
+    font-size: 14px;
+
+}
+
+/* ------精品推荐 大 模块 ------*/
+
+.box {
+    margin-top: 16px;
+}
+
+.box .boxhd {
+    height     : 62px;
+    line-height: 62px;
+
+}
+
+.box .boxhd p {
+    float    : left;
+    font-size: 20px;
+    color    : #494949;
+}
+
+.box .boxhd a {
+    float       : right;
+    margin-right: 31px;
+    font-size   : 12px;
+    color       : #a5a5a5;
+}
+
+.box .boxbd ul li {
+    float           : left;
+    width           : 228px;
+    height          : 270px;
+    margin-bottom   : 15px;
+    margin-left     : 15px;
+    background-color: #ffffff;
+}
+
+.box .boxbd ul li:hover {
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.3);
+}
+
+.box .boxbd ul .list1 {
+    margin-left: 0;
+}
+
+.box .boxbd ul .list6 {
+    margin-left: 0;
+}
+
+
+.box .boxbd ul .list1 .bgi a {
+    position        : relative;
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic1.png);
+}
+
+.box .boxbd ul .list1 .bgi a img {
+    position: absolute;
+    right   : -4px;
+    top     : 4px;
+}
+
+.box .boxbd ul .list2 .bgi a {
+    position        : relative;
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic2.png);
+}
+
+.box .boxbd ul .list2 .bgi a img {
+    position: absolute;
+    right   : -4px;
+    top     : 4px;
+}
+
+.box .boxbd ul .list3 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic3.png);
+}
+
+.box .boxbd ul .list4 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic4.png);
+}
+
+.box .boxbd ul .list5 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic1.png);
+}
+
+.box .boxbd ul .list6 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic2.png);
+}
+
+.box .boxbd ul .list7 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic3.png);
+}
+
+.box .boxbd ul .list8 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic4.png);
+}
+
+.box .boxbd ul .list9 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic1.png);
+}
+
+.box .boxbd ul .list10 .bgi a {
+    display         : block;
+    width           : 228px;
+    height          : 155px;
+    background-image: url(images/pic2.png);
+}
+
+.box .boxbd ul li .bgi a img {
+    float     : right;
+    margin-top: 4px;
+}
+
+.box .boxbd ul li .recommend {
+    margin: 25px 24px;
+}
+
+.box .boxbd ul li .recommend .relink h4 {
+    float        : left;
+    margin-bottom: 16px;
+
+}
+
+.box .boxbd ul li .recommend .relink h4 {
+    font-size  : 14px;
+    font-weight: 400;
+    color      : #050505;
+}
+
+.box .boxbd ul li .recommend .senior {
+    float       : left;
+    margin-right: 8px;
+    font-size   : 12px;
+    color       : #ff7c2d;
+}
+
+.box .boxbd ul li .recommend span {
+    float    : left;
+    color    : #666;
+    font-size: 12px;
+}
+
+/* -----footer模块------ */
+.footer {
+    height          : 417px;
+    background-color: #fff;
+}
+
+.footer .footerbd {
+    width  : 1162px;
+    margin : 0 auto;
+    padding: 33px 19px;
+}
+
+.footer .footerbd .info {
+    float: left;
+}
+
+.footer .footerbd .info p {
+    width     : 435px;
+    height    : 45px;
+    margin-top: 25px;
+    font-size : 12px;
+    color     : #666666;
+}
+
+.footer .footerbd .info button {
+    width           : 118px;
+    height          : 34px;
+    border          : 1px solid #00a4ff;
+    background-color: #fff;
+    font-size       : 16px;
+    color           : #00a4ff;
+    outline         : none;
+    cursor          : pointer;
+}
+
+.footer .footerbd .footer-link {
+    float      : right;
+    padding-top: 35px;
+}
+
+.footer .footerbd .footer-link div {
+    float       : left;
+    width       : 115px;
+    margin-right: 100px;
+}
+
+.footer .footerbd .footer-link .footer-link-box3 {
+    width       : 75px;
+    margin-right: 0;
+}
+
+.footer .footerbd .footer-link div h4 {
+    margin-bottom: 6px;
+    font-size    : 16px;
+    font-weight  : 400;
+}
+
+.footer .footerbd .footer-link div ul li {
+    margin-bottom: 9px;
+}
+
+.footer .footerbd .footer-link div ul li a {
+    font-size: 12px;
+    color    : #000;
+}
